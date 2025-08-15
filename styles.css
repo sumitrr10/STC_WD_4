@@ -107,6 +107,7 @@ h1 {
   color: #aaa;
 }
 
+/* Delete Button */
 .delete-btn {
   background: transparent;
   border: none;
@@ -119,3 +120,35 @@ h1 {
 .delete-btn:hover {
   color: #ff3b3b;
 }
+
+/* Complete Button */
+.complete-btn {
+  background: transparent;
+  border: none;
+  color: #90ee90;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.complete-btn:hover {
+  color: #32cd32;
+}
+
+/* Action Buttons Container */
+.task-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Completed Task Styling */
+.task-item.completed .task-title {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-item.completed {
+  opacity: 0.6;
+}
+
